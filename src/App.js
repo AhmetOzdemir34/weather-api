@@ -54,8 +54,8 @@ function App() {
           <div className="extras">
             <div className="desc">Description : {weather.weather[0].description}</div>
             <div className="alt-flex">
-              <div className="divo" style={{backgroundColor:"rgba(0,0,255,.5)"}}>MIN <br/> {Math.round(weather.main.temp_min-273.15)}°C</div>
-              <div className="divo" style={{backgroundColor:"rgba(255,0,0,.5)"}}>MAX <br/> {Math.round(weather.main.temp_max-273.15)}°C</div>
+              <div className="divo" style={{backgroundColor:"rgba(0,0,255,.5)", marginRight:".2rem"}}>MIN <br/> {Math.round(weather.main.temp_min-273.15)}°C</div>
+              <div className="divo" style={{backgroundColor:"rgba(255,0,0,.5)", marginLeft:".2rem"}}>MAX <br/> {Math.round(weather.main.temp_max-273.15)}°C</div>
             </div>
           </div>
         </div>): <h1>Not found!</h1>}
